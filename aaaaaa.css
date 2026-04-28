@@ -1,0 +1,119 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f5f3f8;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-weight: 800;
+  color: #4a40e0;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #4a40e0;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+/* HERO */
+.hero {
+  padding-top: 120px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* TEXTO */
+.hero-text h2 {
+  font-size: 60px;
+  line-height: 1.1;
+  color: #2c2546;
+}
+
+.hero-text span {
+  color: #4a40e0;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #666;
+}
+
+.hero-text button {
+  padding: 15px 25px;
+  border: none;
+  background: #4a40e0;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* IMAGEM */
+.hero-image img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+
+  .menu {
+    display: none;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 40px;
+  }
+}
