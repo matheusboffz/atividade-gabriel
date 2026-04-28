@@ -61,20 +61,25 @@ body {
 
 /* HERO */
 .hero {
-  padding-top: 120px;
+  padding-top: 140px;
+  padding-bottom: 80px;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
 }
 
 /* TEXTO */
 .hero-text h2 {
-  font-size: 60px;
+  font-size: 70px;
   line-height: 1.1;
   color: #2c2546;
+  font-weight: 800;
+}
+.hero-text{
+  flex: 1;
 }
 
 .hero-text span {
@@ -100,13 +105,56 @@ body {
   width: 100%;
   border-radius: 40px;
 }
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #4a40e0, #7b74ff);
+  color: white;
+  border: none;
+  padding: 18px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
-/* RESPONSIVIDADE */
+.btn-link {
+  color: #4a40e0;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #cfcaf7;
+  padding-bottom: 2px;
+}
+.hero-image {
+  flex: 1;
+  position: relative;
+}
+
+.img-bg {
+  width: 100%;
+  border-radius: 40px;
+}
+.img-overlay {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+
+  background: #ece9f5;
+  padding: 18px;
+  border-radius: 30px;
+
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.img-overlay img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+/* RESPONSIVO */
 @media (max-width: 900px) {
-
-  .menu {
-    display: none;
-  }
 
   .hero-content {
     flex-direction: column;
@@ -114,6 +162,25 @@ body {
   }
 
   .hero-text h2 {
-    font-size: 40px;
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    margin: 20px auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .img-overlay {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: -80px;
+  }
+
+  .img-overlay img {
+    width: 200px;
   }
 }
